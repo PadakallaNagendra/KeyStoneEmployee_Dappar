@@ -18,7 +18,7 @@ namespace KeyStoneEmployee_Dappar.Repositary
 
         public async Task<int> AddHotel(Hotel hoteldetail)
         {
-            using(IDbConnection conn = _connctionfactory.GetHotal())
+            using (IDbConnection conn = _connctionfactory.GetHotal())
             {
                 var res = new DynamicParameters();
                 res.Add("@hotelName", hoteldetail.hotelName);
@@ -86,5 +86,6 @@ namespace KeyStoneEmployee_Dappar.Repositary
                 return true;
             }
         }
+
     }
 }

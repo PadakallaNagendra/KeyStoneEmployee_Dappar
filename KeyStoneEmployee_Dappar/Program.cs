@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IHotelRepositary, HotelRepositary>();
 builder.Services.AddScoped<IHotelService,HotelService>();
 builder.Services.AddScoped<IKHTConnectionFactary, KHTConnectionFactory>();
+//builder.Services.Configure<KHTConfiguration>(builder.Configuration.GetSection("ConnectionStrings")); 
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(builder =>
